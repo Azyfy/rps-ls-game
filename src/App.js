@@ -1,7 +1,7 @@
 import {hot} from "react-hot-loader/root"; // import before react and react-dom
 import { setConfig } from 'react-hot-loader';
 import React from "react";
-import "./App.css"
+import "./App.scss"
 
 function App() {
     return (
