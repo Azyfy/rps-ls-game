@@ -3,10 +3,12 @@ import { setConfig } from "react-hot-loader"
 import React from "react"
 import "./App.scss"
 
+import Game from "./Game.js"
+
 function App() {
 	return (
 		<div className="App" >
-			<h1>Invoice App</h1>
+			<Game />
 		</div>
 	)
 }
