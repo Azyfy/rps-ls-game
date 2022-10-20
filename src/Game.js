@@ -7,6 +7,8 @@ import ScoreBoard from "./components/ScoreBoard"
 import BigBang from "./components/BigBang"
 import Result from "./components/Result"
 
+import "./Game.scss"
+
 export default function Game() {
 	const originalOptions = ["rock", "paper", "scissors"]
 	const bigBangOptions = ["rock", "paper", "scissors", "lizard", "spock"]
@@ -102,13 +104,13 @@ export default function Game() {
 	}
 
 	return (
-		<div>
+		<div className="👾" >
 			<p>{mode}</p>
-			<ModeSwitch switchMode={switchMode} />
+			<ModeSwitch switchMode={switchMode} mode={ mode } />
 			<ScoreBoard pickOptions={ pickOptions } score={ score } />
 			{ (playerPick == null) ?
 				(mode == "Original") ? <Original selectOption={selectOption} /> : <BigBang selectOption={selectOption} />
-				: <Result resetPicks={ resetPicks } message={ resultMessage } />
+				: <Result playerPick={ playerPick } compPick={ compPick } resetPicks={ resetPicks } message={ resultMessage } />
 			}
 		</div>
 	)

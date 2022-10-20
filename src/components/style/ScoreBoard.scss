@@ -1,0 +1,21 @@
+.🔍 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: start;
+    gap: 250px;
+    width: 450px;
+    height: 100px;
+    padding: 10px 0;
+
+    .🔎{
+        text-align: center;
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: hsl(229, 64%, 46%);
+    }
+}

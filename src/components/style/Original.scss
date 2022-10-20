@@ -1,0 +1,28 @@
+.💋 {
+    position: relative;
+    top: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+
+    .🕐 {
+        position: absolute;
+        left: -50px;
+        top: -50px;
+    }
+
+    .🕑 {
+        position: absolute;
+        right: -50px;
+        top: -50px;
+    }
+
+    .🕒 {
+        position: absolute;
+        left: 75px;
+        bottom: -50px;
+    }
+
+}

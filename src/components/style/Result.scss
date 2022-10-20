@@ -1,0 +1,26 @@
+.💅 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 50px;
+
+    .👌 {
+        padding: 10px;
+    }
+
+    .👀{
+        padding: 10px;
+    }
+
+    .💃{
+        border: none;
+        border-radius: 5px;
+        padding: 10px 50px;
+        text-transform: uppercase;
+    }
+
+    .🍪 {
+        color: black;
+    }
+}

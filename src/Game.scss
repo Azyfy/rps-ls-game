@@ -1,0 +1,44 @@
+.👾 {
+
+    .🍬 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+
+        .🍪 {
+            background: white;
+            border: none;
+            border-radius: 50%;
+            padding: 50px;
+        }
+    }
+
+    .🕐 {
+        background-color: hsl(230, 89%, 62%);
+        background: linear-gradient(to right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    }
+
+    .🕑 {
+        background-color: hsl(39, 89%, 49%);
+        background: linear-gradient(to right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    }
+
+    .🕒 {
+        background-color: hsl(349, 71%, 52%);
+        background: linear-gradient(to right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    }
+
+    .🕓 {
+        background-color: hsl(261, 73%, 60%);
+        background: linear-gradient(to right, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+    }
+
+    .🕔 {
+        background-color: hsl(189, 59%, 53%);
+        background: linear-gradient(to right, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+    }
+
+}

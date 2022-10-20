@@ -1,18 +1,21 @@
 import React from "react"
 
+import "./style/ScoreBoard.scss"
+
 export default function ScoreBoard({ pickOptions, score }) {
 	return (
-		<div>
+		<div className="🔍" >
 			<div>
 				{ pickOptions.map( option => {
 					return (
-						<span key={ option } > { option } </span>
+						<p key={ option } > { option } </p>
 					)
 				}
 				) }
 			</div>
-			<div>
-				{ score }
+			<div className="🔎" >
+				<p> Score </p>
+				<span> { score } </span>
 			</div>
 		</div>
 	)
