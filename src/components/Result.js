@@ -3,7 +3,7 @@ import React from "react"
 import "./style/Result.scss"
 
 export default function Result({ playerPick, compPick, resetPicks, message }) {
-	
+
 	const firstPick = pickStyle(playerPick)
 	const secondPick = pickStyle(compPick)
 
@@ -48,9 +48,9 @@ export default function Result({ playerPick, compPick, resetPicks, message }) {
 				}
 			)
 		}
-		  
+
 	}
-	
+
 	return (
 		<div className="💅" >
 			<div>

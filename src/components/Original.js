@@ -10,10 +10,10 @@ export default function Original({ selectOption }) {
 				<button onClick={ () => selectOption("paper") } className="🍪" > P </button>
 			</div>
 			<div className="🍬 🕑" >
-			<button onClick={ () => selectOption("scissors") } className="🍪" > S </button>
+				<button onClick={ () => selectOption("scissors") } className="🍪" > S </button>
 			</div>
 			<div className="🍬 🕒" >
-			<button onClick={ () => selectOption("rock") } className="🍪" > R </button>
+				<button onClick={ () => selectOption("rock") } className="🍪" > R </button>
 			</div>
 		</div>
 	)

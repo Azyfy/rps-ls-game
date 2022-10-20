@@ -4,7 +4,6 @@ import "./style/BigBang.scss"
 import bgPentagon from "../img/bg-pentagon.svg"
 
 export default function BigBang({ selectOption }) {
-	console.log(bgPentagon)
 	return (
 		<div className="💄" style={{ backgroundImage: `url(${bgPentagon})` }} >
 			<div className="🍬 🕐" >
