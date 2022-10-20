@@ -1,0 +1,26 @@
+.👻{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+
+    .📜{
+        background-color: white;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            display: flex;
+            border: 1px solid red
+        }
+    }
+
+    svg {
+        height: 50px;
+        width: 50px;
+    }
+}

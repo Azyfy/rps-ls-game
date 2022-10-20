@@ -6,6 +6,7 @@ import ModeSwitch from "./components/ModeSwitch"
 import ScoreBoard from "./components/ScoreBoard"
 import BigBang from "./components/BigBang"
 import Result from "./components/Result"
+import Rules from "./components/Rules"
 
 import "./Game.scss"
 
@@ -19,6 +20,7 @@ export default function Game() {
 	const [playerPick, setPlayerPick] = useState(null)
 	const [compPick, setCompPick] = useState(null)
 	const [resultMessage, setResultMessage] = useState(null)
+	const [showRules, setShowRules] = useState(false)
 
 	useEffect( () => {
 
@@ -103,6 +105,10 @@ export default function Game() {
 		setCompPick(null)
 	}
 
+	function toggelRules() {
+		setShowRules( (showRules == false) ? true : false )
+	}
+
 	return (
 		<div className="👾" >
 			<p>{mode}</p>
@@ -112,6 +118,8 @@ export default function Game() {
 				(mode == "Original") ? <Original selectOption={selectOption} /> : <BigBang selectOption={selectOption} />
 				: <Result playerPick={ playerPick } compPick={ compPick } resetPicks={ resetPicks } message={ resultMessage } />
 			}
+			<button onClick={ toggelRules } >Rules</button>
+			{ showRules && <Rules mode={ mode } toggelRules={ toggelRules } /> }
 		</div>
 	)
 }
