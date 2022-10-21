@@ -8,7 +8,7 @@ export default function ScoreBoard({ pickOptions, score }) {
 			<div>
 				{ pickOptions.map( option => {
 					return (
-						<p key={ option } > { option } </p>
+						<p key={ option.name } > { option.name } </p>
 					)
 				}
 				) }

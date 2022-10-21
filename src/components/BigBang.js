@@ -3,24 +3,16 @@ import React from "react"
 import "./style/BigBang.scss"
 import bgPentagon from "../img/bg-pentagon.svg"
 
-export default function BigBang({ selectOption }) {
+export default function BigBang({ pickOptions, selectOption }) {
 	return (
 		<div className="💄" style={{ backgroundImage: `url(${bgPentagon})` }} >
-			<div className="🍬 🕐" >
-				<button onClick={ () => selectOption("paper") } className="🍪" > P </button>
-			</div>
-			<div className="🍬 🕑" >
-				<button onClick={ () => selectOption("scissors") } className="🍪" > S </button>
-			</div>
-			<div className="🍬 🕒" >
-				<button onClick={ () => selectOption("rock") } className="🍪" > R </button>
-			</div>
-			<div className="🍬 🕓" >
-				<button onClick={ () => selectOption("lizard") } className="🍪" > L </button>
-			</div>
-			<div className="🍬 🕔" >
-				<button onClick={ () => selectOption("spock") } className="🍪" > Sp </button>
-			</div>
+			{ pickOptions.map( option => {
+				return (
+					<div key={option.name} className={"🍬 " + option.style } >
+						<button onClick={ () => selectOption(option.name) } className="🍪" > <img src={option.icon} alt={option.name} /> </button>
+					</div>
+				)
+			}) }
 		</div>
 	)
 }

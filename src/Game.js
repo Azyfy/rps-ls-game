@@ -10,9 +10,29 @@ import Rules from "./components/Rules"
 
 import "./Game.scss"
 
+import rockIcon from "./img/icon-rock.svg"
+import paperIcon from "./img/icon-paper.svg"
+import scissorsIcon from "./img/icon-scissors.svg"
+import lizardIcon from "./img/icon-lizard.svg"
+import spockIcon from "./img/icon-spock.svg"
+
 export default function Game() {
-	const originalOptions = ["rock", "paper", "scissors"]
-	const bigBangOptions = ["rock", "paper", "scissors", "lizard", "spock"]
+
+	const originalOptions = [{
+		name: "rock", style: "🕒", icon: rockIcon
+	}, {
+		name: "paper", style: "🕐", icon: paperIcon
+	}, {
+		name: "scissors", style: "🕑", icon: scissorsIcon
+	}]
+
+	const bigBangOptions = [ ...originalOptions,
+		{
+			name: "lizard", style: "🕓", icon: lizardIcon
+		}, {
+			name: "spock", style: "🕔", icon: spockIcon
+		}
+	]
 
 	const [mode, setMode] = useState("Original")
 	const [score, setScore] = useState(0)
@@ -97,7 +117,7 @@ export default function Game() {
 	function pickCompOption() {
 		const randPick = Math.floor(Math.random() * pickOptions.length)
 
-		return pickOptions[randPick]
+		return pickOptions[randPick].name
 	}
 
 	function resetPicks() {
@@ -109,14 +129,20 @@ export default function Game() {
 		setShowRules( (showRules == false) ? true : false )
 	}
 
+	function selectSingleOption(pick) {
+		return (
+			pickOptions.find( option => option.name == pick )
+		)
+	}
+
 	return (
 		<div className="👾" >
 			<p>{mode}</p>
 			<ModeSwitch switchMode={switchMode} mode={ mode } />
 			<ScoreBoard pickOptions={ pickOptions } score={ score } />
 			{ (playerPick == null) ?
-				(mode == "Original") ? <Original selectOption={selectOption} /> : <BigBang selectOption={selectOption} />
-				: <Result playerPick={ playerPick } compPick={ compPick } resetPicks={ resetPicks } message={ resultMessage } />
+				(mode == "Original") ? <Original pickOptions={pickOptions} selectOption={selectOption} /> : <BigBang pickOptions={pickOptions} selectOption={selectOption} />
+				: <Result playerPick={ selectSingleOption(playerPick) } compPick={ selectSingleOption(compPick) } resetPicks={ resetPicks } message={ resultMessage } />
 			}
 			<button onClick={ toggelRules } >Rules</button>
 			{ showRules && <Rules mode={ mode } toggelRules={ toggelRules } /> }
