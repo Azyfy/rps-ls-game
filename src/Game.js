@@ -138,7 +138,7 @@ export default function Game() {
 	return (
 		<div className="👾" >
 			<p>{mode}</p>
-			<ModeSwitch switchMode={switchMode} mode={ mode } />
+			{ (playerPick == null) && <ModeSwitch switchMode={switchMode} mode={ mode } /> }
 			<ScoreBoard pickOptions={ pickOptions } score={ score } />
 			{ (playerPick == null) ?
 				(mode == "Original") ? <Original pickOptions={pickOptions} selectOption={selectOption} /> : <BigBang pickOptions={pickOptions} selectOption={selectOption} />
