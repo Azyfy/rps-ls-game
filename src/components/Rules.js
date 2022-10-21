@@ -1,8 +1,8 @@
 import React from "react"
 
 import "./style/Rules.scss"
-import rpsRules from "../img/rps-rules.svg"
-import rpslsRules from "../img/rpsls-rules.svg"
+import rpsRules from "../img/image-rules.svg"
+import rpslsRules from "../img/image-rules-bonus.svg"
 
 export default function Rules({ mode, toggelRules }) {
 	return (
