@@ -21,7 +21,7 @@ export default function Result({ playerPick, compPick, resetPicks, message }) {
 			<div>
 				<div className={"🍬 " + compPick.style } >
 					<div className="🍪" >
-					<img src={compPick.icon} alt={compPick.name} />
+						<img src={compPick.icon} alt={compPick.name} />
 					</div>
 				</div>
 				<p className="👌" > The house picked </p>
