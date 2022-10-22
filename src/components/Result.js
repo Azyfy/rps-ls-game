@@ -14,7 +14,7 @@ export default function Result({ playerPick, compPick, resetPicks, message }) {
 				</div>
 				<p className="👌" > You picked </p>
 			</div>
-			<div>
+			<div className="✨" >
 				<div className="👀" > { message } </div>
 				<button onClick={ resetPicks } className="💃" > Play Again </button>
 			</div>

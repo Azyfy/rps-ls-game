@@ -1,9 +1,18 @@
 .💅 {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    top: 100px;
     gap: 50px;
+
+    .✨ {
+        position: absolute;
+        bottom: -75px;
+    }
 
     .👌 {
         padding: 10px;

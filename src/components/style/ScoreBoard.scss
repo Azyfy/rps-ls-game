@@ -1,15 +1,18 @@
 .🔍 {
+    position: relative;
+    top: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin: 0 auto;
+    justify-content: space-between;
     text-align: start;
-    gap: 250px;
-    width: 450px;
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 250px;
     height: 100px;
-    padding: 10px 0;
+    padding: 10px 20px;
 
     .🔎{
         text-align: center;
@@ -17,5 +20,9 @@
         padding: 10px 20px;
         border-radius: 5px;
         color: hsl(229, 64%, 46%);
+
+        span {
+            font-size: xx-large;
+        }
     }
 }

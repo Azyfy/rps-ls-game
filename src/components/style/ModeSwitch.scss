@@ -1,11 +1,26 @@
+@import "./mix.scss";
+
 .🔄 {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: smaller;
+    transform: translateX(-50%);
 
     .🧶 {
         background: none;
         border: 1px solid white;
         color: white;
         border-radius: 5px;
-        width: 30px;
+        height: 25px;
+        width: 100px;
+
+        svg {
+            height: 100%;
+            width: 100%;
+        }
     }
 }

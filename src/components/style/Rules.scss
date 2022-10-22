@@ -6,21 +6,23 @@
 
 
     .📜{
+        height: 100%;
+        color: hsl(229, 25%, 31%);
+        font-weight: bold;
+        font-size: x-large;
         background-color: white;
-        color: black;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-
-        div {
-            display: flex;
-            border: 1px solid red
-        }
     }
 
     svg {
         height: 50px;
         width: 50px;
+    }
+
+    svg:hover {
+        cursor: pointer;
     }
 }

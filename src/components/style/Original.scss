@@ -1,12 +1,7 @@
+@import "./mix.scss";
+
 .💋 {
-    position: relative;
-    top: 100px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    margin-bottom: 150px;
+    @include pick-container;
 
     .🕐 {
         position: absolute;
@@ -22,8 +17,9 @@
 
     .🕒 {
         position: absolute;
-        left: 75px;
+        left: 50%;
         bottom: -50px;
+        transform: translateX(-50%);
     }
 
 }

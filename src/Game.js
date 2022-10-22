@@ -137,14 +137,13 @@ export default function Game() {
 
 	return (
 		<div className="👾" >
-			<p>{mode}</p>
 			{ (playerPick == null) && <ModeSwitch switchMode={switchMode} mode={ mode } /> }
 			<ScoreBoard pickOptions={ pickOptions } score={ score } />
 			{ (playerPick == null) ?
 				(mode == "Original") ? <Original pickOptions={pickOptions} selectOption={selectOption} /> : <BigBang pickOptions={pickOptions} selectOption={selectOption} />
 				: <Result playerPick={ selectSingleOption(playerPick) } compPick={ selectSingleOption(compPick) } resetPicks={ resetPicks } message={ resultMessage } />
 			}
-			<button onClick={ toggelRules } >Rules</button>
+			<button onClick={ toggelRules } className="📖" >Rules</button>
 			{ showRules && <Rules mode={ mode } toggelRules={ toggelRules } /> }
 		</div>
 	)
