@@ -7,3 +7,22 @@
     height: 200px;
     margin: 0 auto;
   }
+
+@mixin enlarge-pick-c {
+  width: 250px;
+  height: 250px;
+}
+
+@mixin enlarge-pick-outer {
+  height: 120px !important;
+  width: 120px !important;
+}
+
+@mixin enlarge-pick-inner {
+  padding: 25px !important;
+}
+
+@mixin enlarge-pick-icon {
+  width: 40px !important;
+  height: 40px !important;
+}

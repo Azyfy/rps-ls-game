@@ -37,3 +37,21 @@
     }
 
 }
+
+@media screen and (min-width: 1024px)  { 
+    .💄 {
+        @include enlarge-pick-c;
+
+        .🍬 {
+            @include enlarge-pick-outer;
+        
+            .🍪 {
+                @include enlarge-pick-inner;
+        
+                img {
+                    @include enlarge-pick-icon;
+                }
+            }
+        }
+      }
+}

@@ -22,11 +22,11 @@
         }
     }
 
-    .📖{
+    .📖 {
         position: relative;
         margin: 0 0;
         margin-top: 200px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         border: 1px solid white;
         border-radius: 10px;
         background: none;
@@ -60,4 +60,11 @@
         background: linear-gradient(to right, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
     }
 
+}
+
+@media screen and (min-width: 1024px)  { 
+    .📖 {
+        right: -40%;
+        margin-top: 150px !important;
+      }
 }
