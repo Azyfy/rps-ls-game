@@ -1,0 +1,28 @@
+#rings {
+    position: absolute;
+    z-index: 2;
+    top: -25px;
+    padding: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+
+    div {
+        position: absolute;
+        z-index: 3;
+        top: -20px;
+        padding: 120px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.05);
+
+
+        div {
+            position: absolute;
+            z-index: 100;
+            top: -20px;
+            padding: 140px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+    }
+
+}

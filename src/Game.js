@@ -97,7 +97,9 @@ export default function Game() {
 			message = "Error: bad point"
 		}
 
-		setScore( score + point )
+		setTimeout(() => {
+			setScore( score + point )
+		}, 1500)
 		setResultMessage( message )
 	}
 
