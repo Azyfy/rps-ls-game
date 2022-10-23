@@ -1,4 +1,7 @@
+@import url("https://fonts.google.com/specimen/Barlow+Semi+Condensed");
+
 .App {
+    font-family: "Barlow Semi Condensed", sans-serif;
     position: relative;
     background-color: rgb(63, 55, 214);
     background: radial-gradient(circle at top, hsl(214, 47%, 23%) 25%, hsl(237, 49%, 15%));
