@@ -37,6 +37,5 @@ module.exports = {
         publicPath: '/dist/'
       },
     hot: "only"
-  },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  }
 };
