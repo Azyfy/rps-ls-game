@@ -4,12 +4,12 @@ import "./style/Rings.scss"
 
 export default function Rings() {
 
-    useEffect(() => {
+	useEffect(() => {
 
 		const rings = document.querySelector("#rings")
 
 		rings.style.transform="scale(0)"
-		rings.style.transition = "transform 2s";
+		rings.style.transition = "transform 2s"
 
 		setTimeout(() => {
 
@@ -19,9 +19,9 @@ export default function Rings() {
 
 	}, [])
 
-    return (
-        <div id="rings" > 
-            <div> <div></div> </div> 
-        </div>
-    )
+	return (
+		<div id="rings" >
+			<div> <div></div> </div>
+		</div>
+	)
 }

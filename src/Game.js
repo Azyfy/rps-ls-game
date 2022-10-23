@@ -52,10 +52,6 @@ export default function Game() {
 
 	function playGame() {
 
-		// console.log("________________________")
-		// console.log("PLAYER PICK", playerPick)
-		// console.log("COMPUTER PICK", compPick)
-
 		//first check is for a draw, rest are for a win condition and last one when the player loses
 		if( playerPick === compPick ) {
 			setResult(0)

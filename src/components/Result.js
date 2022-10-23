@@ -8,11 +8,9 @@ export default function Result({ playerPick, compPick, resetPicks, message }) {
 
 	useEffect(() => {
 
-		const playerPickEl = document.querySelector("#first")
-
 		const compPickEl = document.querySelector("#second")
 		compPickEl.style.transform="scale(0)"
-		compPickEl.style.transition = "transform 2s";
+		compPickEl.style.transition = "transform 2s"
 
 		const displayMessageEl = document.querySelector(".✨")
 		displayMessageEl.style.display ="none"
@@ -21,13 +19,6 @@ export default function Result({ playerPick, compPick, resetPicks, message }) {
 			displayMessageEl.style.display ="block"
 
 			compPickEl.style.transform="scale(1)"
-
-			if(message == "You Win") {
-				playerPickEl.appendChild(divOne)
-			}
-			if(message == "You Lose") {
-				compPickEl.appendChild(divOne)
-			}
 
 		}, 1000)
 
