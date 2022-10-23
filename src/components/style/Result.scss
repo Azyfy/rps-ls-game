@@ -6,7 +6,7 @@
     height: 200px;
     margin: 0 auto;
     top: 100px;
-    gap: 50px;
+    gap: 15px;
 
     div:first-child, div:last-child {
         position: relative;
@@ -58,6 +58,7 @@
     .💅 {
 
         height: 250px;
+        gap: 50px;
 
         div:first-child, div:last-child {
             display: flex;
@@ -67,5 +68,7 @@
         .✨ {
             position: static !important;
         }
+
+        
     }
 }
