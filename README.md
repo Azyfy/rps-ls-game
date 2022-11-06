@@ -17,7 +17,7 @@ A rock paper scissors / lizard spock game. [Frontend mentor challenge](https://w
 ## Overview
 
 ### Links
-- [Live](https://azzryel.github.io/rps-ls-game)
+- [Live](https://azyfy.github.io/rps-ls-game)
 
 ### Features
 - Play rock paper scissors against the computer
